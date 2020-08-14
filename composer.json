@@ -6,13 +6,12 @@
     "php",
     "framework"
   ],
-  "homepage": "https://github.com/japerman/start-framework",
+  "homepage": "https://github.com/Japerman/start-framework",
   "license": "MIT",
   "authors": [
     {
       "name": "Jose Perez",
-      "email": "japerman@gmail.com",
-      "role": "Creator"
+      "email": "japerman@gmail.com"
     }
   ],
   "require": {
@@ -22,8 +21,8 @@
     "ext-json": "*",
     "ext-openssl": "*",
     "izniburak/nur-migration": "^1",
-    "izniburak/pdox": "^1",
-    "izniburak/router": "^1",
+    "japerman/start-pdox": "^1",
+    "japerman/start-router": "^1",
     "illuminate/database": "^6.10",
     "illuminate/pagination": "^6.10",
     "illuminate/view": "^6.10",

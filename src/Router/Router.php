@@ -2,7 +2,7 @@
 
 namespace Start\Router;
 
-use Buki\Router as RouterProvider;
+use Start\Router as RouterProvider;
 
 class Router extends RouterProvider
 {
@@ -32,7 +32,7 @@ class Router extends RouterProvider
     /**
      * @param $controller
      *
-     * @return \Buki\Router\RouterException|mixed
+     * @return \Start\Router\RouterException|mixed
      */
     protected function resolveClass($controller)
     {

@@ -2,7 +2,7 @@
 
 namespace Start\Router;
 
-use Buki\Router\RouterCommand as RouterCommandProvider;
+use Start\Router\RouterCommand as RouterCommandProvider;
 
 class RouterCommand extends RouterCommandProvider
 {

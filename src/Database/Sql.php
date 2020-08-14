@@ -2,7 +2,7 @@
 
 namespace Start\Database;
 
-use Buki\Pdox as PdoxProvider;
+use Start\Pdox as PdoxProvider;
 
 class Sql extends PdoxProvider
 {
