@@ -18,7 +18,7 @@ use Start\Kernel\Facade;
  * @method static mixed pattern(array|string $name, $pattern = null)
  * @method static mixed getRoutes()
  *
- * @see \Nur\Router\Route
+ * @see \Start\Router\Route
  */
 class Route extends Facade
 {

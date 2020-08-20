@@ -21,7 +21,7 @@ class Hash extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('hash', \Nur\Hash\Hash::class);
+        $this->app->singleton('hash', \Start\Hash\Hash::class);
 
         $this->app->singleton('hash.driver', function ($app) {
             return $app['hash']->driver();

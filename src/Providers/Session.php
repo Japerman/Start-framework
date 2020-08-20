@@ -21,6 +21,6 @@ class Session extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('session', \Nur\Http\Session::class);
+        $this->app->singleton('session', \Start\Http\Session::class);
     }
 }

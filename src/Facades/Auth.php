@@ -7,15 +7,15 @@ use Start\Kernel\Facade;
 /**
  * @method static bool check()
  * @method static bool guest()
- * @method static \Nur\Database\Model|null user()
+ * @method static \Start\Database\Model|null user()
  * @method static int|null id()
  * @method static bool validate(array $credentials = [])
  * @method static bool attempt(array $credentials = [], bool $remember = false)
- * @method static bool login(\Nur\Database\Model $user, bool $remember = false)
+ * @method static bool login(\Start\Database\Model $user, bool $remember = false)
  * @method static bool loginUsingId(mixed $id, bool $remember = false)
  * @method static void logout()
  *
- * @see \Nur\Auth\Auth
+ * @see \Start\Auth\Auth
  */
 class Auth extends Facade
 {
@@ -26,6 +26,6 @@ class Auth extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return \Nur\Auth\Auth::class;
+        return \Start\Auth\Auth::class;
     }
 }

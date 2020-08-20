@@ -18,14 +18,14 @@ class FormProvider
     /**
      * The URI generator instance.
      *
-     * @var \Nur\Uri\Uri;
+     * @var \Start\Uri\Uri;
      */
     protected $uri;
 
     /**
      * The HTML builder instance.
      *
-     * @var \Nur\Components\HtmlBuilder
+     * @var \Start\Components\HtmlBuilder
      */
     protected $html;
 

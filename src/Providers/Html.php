@@ -21,7 +21,7 @@ class Html extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('html', \Nur\Components\Builder\Html::class);
-        $this->app->singleton('form', \Nur\Components\Builder\Form::class);
+        $this->app->singleton('html', \Start\Components\Builder\Html::class);
+        $this->app->singleton('form', \Start\Components\Builder\Form::class);
     }
 }

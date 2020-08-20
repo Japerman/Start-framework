@@ -21,6 +21,6 @@ class Log extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('log', \Nur\Log\Log::class);
+        $this->app->singleton('log', \Start\Log\Log::class);
     }
 }

@@ -16,7 +16,7 @@ class Database extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('builder', \Nur\Database\Builder::class);
+        $this->app->singleton('builder', \Start\Database\Builder::class);
 
         // Paginator::viewFactoryResolver(function () {
         //     return $this->app['view'];

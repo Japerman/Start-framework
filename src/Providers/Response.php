@@ -14,6 +14,6 @@ class Response extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(\Nur\Http\Response::class, \Nur\Http\Response::class);
+        $this->app->singleton(\Start\Http\Response::class, \Start\Http\Response::class);
     }
 }

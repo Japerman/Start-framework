@@ -26,7 +26,7 @@ use Start\Kernel\Facade;
  * @method static int transactionLevel()
  * @method static array pretend(\Closure $callback)
  *
- * @see \Nur\Database\Builder
+ * @see \Start\Database\Builder
  */
 class DB extends Facade
 {

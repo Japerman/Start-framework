@@ -17,7 +17,7 @@ if (! function_exists('app')) {
      * @param string|null $abstract
      * @param array       $parameters
      *
-     * @return mixed|\Nur\Kernel\Application
+     * @return mixed|\Start\Kernel\Application
      * @throws
      */
     function app($abstract = null, array $parameters = [])
@@ -43,7 +43,7 @@ if (! function_exists('config')) {
     function config($key = null, $default = null)
     {
         /**
-         * @var $config \Nur\Config\Config
+         * @var $config \Start\Config\Config
          */
         $config = app('config');
         if (func_num_args() === 0) {
@@ -73,10 +73,10 @@ if (! function_exists('abort')) {
     function abort($code, $message = null, array $headers = [])
     {
         if ($code === 404) {
-            throw new \Nur\Exception\NotFoundHttpException($message);
+            throw new \Start\Exception\NotFoundHttpException($message);
         }
 
-        throw new \Nur\Exception\HttpException($code, $message, null, $headers);
+        throw new \Start\Exception\HttpException($code, $message, null, $headers);
     }
 }
 
@@ -126,7 +126,7 @@ if (! function_exists('blade')) {
      * @param array  $data
      * @param array  $mergeData
      *
-     * @return \Nur\Http\Response|string
+     * @return \Start\Http\Response|string
      * @throws
      */
     function blade($view, array $data = [], array $mergeData = [])
@@ -142,7 +142,7 @@ if (! function_exists('view')) {
      * @param string $name
      * @param array  $data
      *
-     * @return \Nur\Http\Response|string
+     * @return \Start\Http\Response|string
      */
     function view($name, array $data = [])
     {
@@ -169,13 +169,13 @@ if (! function_exists('auth')) {
     /**
      * Authentication
      *
-     * @param null|\Nur\Database\Model $user
+     * @param null|\Start\Database\Model $user
      *
      * @return bool|Nur\Auth\Auth
      */
     function auth($user = null)
     {
-        $auth = app(\Nur\Auth\Auth::class);
+        $auth = app(\Start\Auth\Auth::class);
         if (is_null($user)) {
             return $auth;
         }
@@ -284,7 +284,7 @@ if (! function_exists('event')) {
      */
     function event($event, array $params = [], $method = 'handle')
     {
-        return app(\Nur\Event\Event::class)->trigger($event, $params, $method);
+        return app(\Start\Event\Event::class)->trigger($event, $params, $method);
     }
 }
 
@@ -325,7 +325,7 @@ if (! function_exists('hasher')) {
      * @param string $value
      * @param array  $options
      *
-     * @return string|\Nur\Hash\Hash
+     * @return string|\Start\Hash\Hash
      * @throws
      */
     function hasher($value = null, $options = [])
@@ -345,7 +345,7 @@ if (! function_exists('bcrypt')) {
      * @param string $value
      * @param array  $options
      *
-     * @return string|\Nur\Hash\BcryptHash
+     * @return string|\Start\Hash\BcryptHash
      */
     function bcrypt($value = null, $options = [])
     {
@@ -531,11 +531,11 @@ if (! function_exists('request')) {
      * @param array|string $key
      * @param mixed        $default
      *
-     * @return \Nur\Http\Request|string|array
+     * @return \Start\Http\Request|string|array
      */
     function request($key = null, $default = null)
     {
-        $request = app(\Nur\Http\Request::class);
+        $request = app(\Start\Http\Request::class);
         if (is_null($key)) {
             return $request;
         }
@@ -555,11 +555,11 @@ if (! function_exists('response')) {
      * @param int               $status
      * @param array             $headers
      *
-     * @return \Nur\Http\Response|string
+     * @return \Start\Http\Response|string
      */
     function response($content = '', $status = 200, array $headers = [])
     {
-        $response = app(\Nur\Http\Response::class);
+        $response = app(\Start\Http\Response::class);
         if (func_num_args() === 0) {
             return $response;
         }
@@ -592,7 +592,7 @@ if (! function_exists('now')) {
      */
     function now($tz = null)
     {
-        return \Nur\Facades\Date::now($tz);
+        return \Start\Facades\Date::now($tz);
     }
 }
 
@@ -603,7 +603,7 @@ if (! function_exists('trans')) {
      * @param  string|null  $key
      * @param  array  $replace
      * @param  string|null  $locale
-     * @return \Nur\Translation\Translator|string|array|null
+     * @return \Start\Translation\Translator|string|array|null
      */
     function trans($key = null, $replace = [], $locale = null)
     {

@@ -10,7 +10,7 @@ use Start\Kernel\Facade;
  * @method static bool check(string $value, string $hashedValue, array $options = [])
  * @method static bool needsRehash(string $hashedValue, array $options = [])
  *
- * @see \Nur\Hash\Hash
+ * @see \Start\Hash\Hash
  */
 class Hash extends Facade
 {

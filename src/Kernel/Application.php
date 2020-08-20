@@ -1177,20 +1177,20 @@ class Application extends Container
     protected function init()
     {
         $this->registerCoreProviders = [
-            \Nur\Providers\Event::class,
-            \Nur\Providers\Route::class,
-            \Nur\Providers\Load::class,
-            \Nur\Providers\Uri::class,
-            \Nur\Providers\Request::class,
-            \Nur\Providers\Response::class,
-            \Nur\Providers\Encryption::class,
+            \Start\Providers\Event::class,
+            \Start\Providers\Route::class,
+            \Start\Providers\Load::class,
+            \Start\Providers\Uri::class,
+            \Start\Providers\Request::class,
+            \Start\Providers\Response::class,
+            \Start\Providers\Encryption::class,
         ];
 
         $this->registerCoreAliases = [
-            'Route'     => \Nur\Facades\Route::class,
-            'Request'   => \Nur\Facades\Request::class,
-            'Response'  => \Nur\Facades\Response::class,
-            'Uri'       => \Nur\Facades\Uri::class,
+            'Route'     => \Start\Facades\Route::class,
+            'Request'   => \Start\Facades\Request::class,
+            'Response'  => \Start\Facades\Response::class,
+            'Uri'       => \Start\Facades\Uri::class,
         ];
     }
 
@@ -1238,7 +1238,7 @@ class Application extends Container
 
         $this->loadConfigFiles();
         $this->singleton('config', function () {
-            return new \Nur\Config\Config($this->config);
+            return new \Start\Config\Config($this->config);
         });
 
         $this->singleton('files', function () {
@@ -1309,7 +1309,7 @@ class Application extends Container
     /**
      * Mark the given provider as registered.
      *
-     * @param \Nur\Kernel\ServiceProvider $provider
+     * @param \Start\Kernel\ServiceProvider $provider
      *
      * @return void
      */
@@ -1323,7 +1323,7 @@ class Application extends Container
     /**
      * Boot the given service provider.
      *
-     * @param \Nur\Kernel\ServiceProvider $provider
+     * @param \Start\Kernel\ServiceProvider $provider
      *
      * @return mixed|void
      */

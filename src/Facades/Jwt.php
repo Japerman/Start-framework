@@ -11,7 +11,7 @@ use Start\Kernel\Facade;
  * @method static int getLeeway()
  * @method static void setLeeway(int $leeway)
  *
- * @see \Nur\Auth\Jwt\Jwt
+ * @see \Start\Auth\Jwt\Jwt
  */
 class Jwt extends Facade
 {

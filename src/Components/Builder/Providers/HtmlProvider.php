@@ -16,7 +16,7 @@ class HtmlProvider
     /**
      * The URI generator instance.
      *
-     * @var \Nur\Uri\Uri;
+     * @var \Start\Uri\Uri;
      */
     protected $uri;
 

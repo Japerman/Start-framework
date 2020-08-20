@@ -26,7 +26,7 @@ class Request extends SymfonyRequest
     protected $json;
 
     /**
-     * @var \Nur\Components\Validation\Validation
+     * @var \Start\Components\Validation\Validation
      */
     protected $validation;
 

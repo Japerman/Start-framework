@@ -21,6 +21,6 @@ class Validation extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('validation', \Nur\Components\Validation\Validation::class);
+        $this->app->singleton('validation', \Start\Components\Validation\Validation::class);
     }
 }

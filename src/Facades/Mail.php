@@ -34,7 +34,7 @@ use Start\Kernel\Facade;
  * @method static void clearCustomHeaders()
  * @method static bool send()
  *
- * @see \Nur\Mail\Mail
+ * @see \Start\Mail\Mail
  */
 class Mail extends Facade
 {

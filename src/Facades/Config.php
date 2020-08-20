@@ -12,7 +12,7 @@ use Start\Kernel\Facade;
  * @method static void prepend($key, $value)
  * @method static void push($key, $value)
  *
- * @see \Nur\Config\Config
+ * @see \Start\Config\Config
  */
 class Config extends Facade
 {

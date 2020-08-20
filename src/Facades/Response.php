@@ -11,7 +11,7 @@ use Start\Kernel\Facade;
  * @method static BaseResponse|null view(string $view, array $data = [])
  * @method static BaseResponse|null blade(string $view, array $data = [], array $mergeData = [])
  *
- * @see \Nur\Http\Response
+ * @see \Start\Http\Response
  */
 class Response extends Facade
 {

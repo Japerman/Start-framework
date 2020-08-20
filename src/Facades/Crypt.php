@@ -8,7 +8,7 @@ use Start\Kernel\Facade;
  * @method static string encrypt(string $value, bool $serialize = true)
  * @method static string decrypt(string $payload, bool $unserialize = true)
  *
- * @see \Nur\Encryption\Encrypter
+ * @see \Start\Encryption\Encrypter
  */
 class Crypt extends Facade
 {

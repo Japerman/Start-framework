@@ -5,12 +5,12 @@ namespace Start\Console;
 class Application
 {
     /**
-     * @var \Nur\Console\Application
+     * @var \Start\Console\Application
      */
     protected $app;
 
     /**
-     * @var \Nur\Kernel\Application
+     * @var \Start\Kernel\Application
      */
     protected $nur;
 
@@ -74,7 +74,7 @@ class Application
      * Set console application.
      *
      * @param \Symfony\Component\Console\Application $consoleApp  Console Application
-     * @param \Nur\Kernel\Application $app                        Nur Framework Application
+     * @param \Start\Kernel\Application $app                        Nur Framework Application
      *
      * @return void
      */

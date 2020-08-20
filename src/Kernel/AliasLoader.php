@@ -35,7 +35,7 @@ class AliasLoader
     /**
      * The singleton instance of the loader.
      *
-     * @var \Nur\Kernel\AliasLoader
+     * @var \Start\Kernel\AliasLoader
      */
     protected static $instance;
 
@@ -54,7 +54,7 @@ class AliasLoader
      * Get or create the singleton alias loader instance.
      *
      * @param  array  $aliases
-     * @return \Nur\Kernel\AliasLoader
+     * @return \Start\Kernel\AliasLoader
      */
     public static function getInstance(array $aliases = [])
     {
@@ -230,7 +230,7 @@ class AliasLoader
     /**
      * Set the value of the singleton alias loader.
      *
-     * @param  \Nur\Kernel\AliasLoader  $loader
+     * @param  \Start\Kernel\AliasLoader  $loader
      * @return void
      */
     public static function setInstance($loader)

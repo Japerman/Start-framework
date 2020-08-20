@@ -20,7 +20,7 @@
     "ext-pdo": "*",
     "ext-json": "*",
     "ext-openssl": "*",
-    "izniburak/nur-migration": "^1",
+    "japerman/start-migration": "^1",
     "japerman/start-pdox": "^1",
     "japerman/start-router": "^1",
     "illuminate/database": "^6.10",
